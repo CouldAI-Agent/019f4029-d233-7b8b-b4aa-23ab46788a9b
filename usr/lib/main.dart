@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/dashboard_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,14 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Чек-листы ресторана',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const MyHomePage(title: 'Flutter Demo Home Page'),
+        '/': (context) => const DashboardScreen(),
       },
     );
   }
